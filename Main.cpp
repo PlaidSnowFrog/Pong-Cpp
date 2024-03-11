@@ -30,17 +30,17 @@ int main() {
 		}
 
 		    // Update ball position
-    	ball.x += (balltox ? 1 : -1); // Adjust speed as needed
-   		 ball.y += (balltoy ? 1 : -1); // Adjust speed as needed
+    		 ball.x += (balltox ? 1 : -1); 
+   		 ball.y += (balltoy ? 1 : -1); 
 
-    	// Check for collision with window edges
-    	if (ball.x <= 0 || ball.x >= 590) {
-        	balltox = !balltox; // Reverse horizontal direction
-        	score--;
-    	}
-    	if (ball.y <= 0 || ball.y >= 430) {
-        	balltoy = !balltoy; // Reverse vertical direction
-    	}
+    		// Check for collision with window edges
+    		if (ball.x <= 0 || ball.x >= 590) {
+        		balltox = !balltox; 
+        		score--;
+    		}
+    		if (ball.y <= 0 || ball.y >= 430) {
+        		balltoy = !balltoy;
+    		}
 
 
 		// Check for collision with paddles
